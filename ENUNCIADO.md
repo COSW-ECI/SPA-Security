@@ -17,6 +17,15 @@ __Parte I.__
 @RequestMapping(value = "/{ruta}", method = RequestMethod.GET)
 
 	```
+	
+3. En el anterior controlador agruegue el siguiente recurso:
+
+	```java
+    @RequestMapping("/app/user")
+    public Principal user(Principal user) {
+        return user;
+    }
+	```
 3. Para implementar la funcionalidad de lado del servidor (consulta de tareas, registro de una), cree una interfaz que defina las operaciones requeridas. Agregue al controlador del API Rest un atributo que corresponda al tipo de la interfaz creada, con su respectiva anotación @Autowired.
 
 4. Implemente un Stub para dicha interfaz (una implementación simulada), el cual mantenga los datos (los TODOs registrados) en memoria. Haga que dicha implementación sea la que se inyecte en el controlador del API REST poniendo en éste una anotación @Service.
