@@ -3,6 +3,7 @@
 
 ####Laboratorio - SPA y Seguridad back-end.
 
+Basado en el material oficial de [Spring](https://spring.io/blog/2015/01/12/the-login-page-angular-js-and-spring-security-part-ii).
 
 __Parte I.__
 
